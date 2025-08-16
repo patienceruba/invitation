@@ -61,6 +61,13 @@
             font-weight: bold;
         }
 
+        iframe {
+            border-radius: 12px;
+            margin-top: 10px;
+            width: 100%;
+            height: 250px;
+        }
+
         /* Hover effect */
         p:hover {
             color: #ff4d6d;
@@ -109,17 +116,26 @@
     <main>
         <h1>🎉 You’re Invited! 🎉</h1>
 
-        <p>Umuryango Wa Hakizabera Azarias unejejwe no kubatumira mwisabukuru y' imyaka 70, y' umubyeyi wabo Hakizabera Azarias</p>
+        <p>Umuryango Wa Hakizabera Azarias unejejwe no kubatumira mwisabukuru y'imyaka 70, y'umubyeyi wabo Hakizabera Azarias</p>
         <p><span class="icon">📍</span>Location: Rubavu, Gisenyi, Munsi yaho gare yahoze</p>
-        <p><span class="icon">📅</span>Date: 30. 08. 2025</p>
+
+        <!-- Google Map Embed -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3229.941344587867!2d29.248041999999998!3d-1.6841189999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2srw!4v1755381572853!5m2!1sen!2srw" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <p><span class="icon">📅</span>Date: 30.08.2025</p>
         <p><span class="icon">🕑</span>Time: 15:00</p>
 
         <div class="countdown" id="countdown"></div>
         <p>Twishimiye Kubana namwe</p>
     </main>
 
+    <!-- Countdown Timer -->
     <script>
-        // Countdown Timer
         const eventDate = new Date("August 30, 2025 15:00:00").getTime();
         const countdownElement = document.getElementById('countdown');
 
